@@ -1,0 +1,58 @@
+---
+title: "Research"
+title-block-banner: false
+---
+
+::: {.specialty}
+## Social Network Analysis
+
+What do diverse entities, such as global cities, terrorists, football players, non-profit organizations, students in a classroom and scientific papers have in common? There are connections among them, which can be seen and analysed as a network. This allows us to see which football player is most important in a given team, which terrorist may have access to key information, whether a classroom is cohesive or fragmented, whether some NGOs cooperate closely with particular others, or whether there is a hierarchy among global cities. Social network analysis (SNA) provides the tools to answer these (and many more) research questions.
+
+In my own research, I focus mainly on applying SNA to the study of various forms of organized crime from corruption, illegal commodities distribution (e.g., drugs) to terrorism. All these phenomena are difficult to tackle with standard social scientific tools and approaches. Yet, as some researchers suggest, relations and interactions are "the least common denominators" of all the forms of organized crime and SNA allows to shed some light into them.
+
+Other areas of inquiry where I applied SNA contain political networks (networks of co-affiliations among politicians or cooperation among organizations), educational networks (integration of Ukrainian refugee students in Czech school networks), historical networks (heretical medieval communities), or epidemiological research (COVID-19 transmission).
+:::
+
+::: {.links}
+### Links
+
+[Mitchell Centre](https://www.socialsciences.manchester.ac.uk/mitchell-centre/){target="_blank"}
+
+[Networks and crime - Mitchell centre](https://www.socialsciences.manchester.ac.uk/mitchell-centre/research/covert-networks/){target="_blank"}
+
+[Transcrime](https://www.transcrime.it/){target="_blank"}
+:::
+
+::: {.specialty}
+## Statistical models for networks
+
+Descriptive SNA (see above) can be a potent tool for analysing empirical networks by identifying their central nodes, characterizing their structures, or uncovering subgroups of nodes. Statistical modelling of social networks enables to go beyond plain description and test hypotheses about structure and dynamics of a given network. This allows to distinguish significant structural patterns from random ones, reduce complex networks to their constituting elements, or to explain the emergence a whole network from actor-level mechanisms. This is synergistic with the aims of analytical sociology and criminology described below.
+:::
+
+::: {.links}
+### Links
+
+[MelNet](http://www.melnet.org.au/){target="_blank"}
+
+[RSiena website](https://www.stats.ox.ac.uk/~snijders/siena/){target="_blank"}
+
+[Zurich](https://sn.ethz.ch/){target="_blank"}
+
+[statnet](https://statnet.org){target="_blank"}
+
+[EventNet](https://github.com/juergenlerner/eventnet/wiki){target="_blank"}
+:::
+
+::: {.specialty}
+## Analytical sociology and criminology
+
+How do macro-structures and distributions emerge from micro-scale (inter)actions of actors? How come that even very cosmopolitan citizens may end up living in a residentially segregated city? Can littering trigger a spiral of criminality in a given location? Why do some innovations spread successfully while others do not? Why do successful people grow even more successful? How can we explain the difference between crime rates of males and females?
+
+All these question and many more are at the core of what analytical sociology and criminology (ASC) seeks to uncover. ASC focuses on identifying and empirically testing the causal mechanisms that bring about the phenomena that we observe such as spatial patterns, distributions or network structures. Doing so, ASC works with a range of theories of actions and various methods such as SNA, agent-based modelling, or experiments.
+:::
+
+::: {.links}
+### Links
+
+[IAS](https://liu.se/en/organisation/liu/iei/ias){target="_blank"}
+:::

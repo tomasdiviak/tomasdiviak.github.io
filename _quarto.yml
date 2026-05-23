@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Tomas Diviak"
+  favicon: TDfavicon.ico
+  search: false
+  page-footer: ""
+  navbar: false
+
+format:
+  html:
+    theme: none
+    css: styles/site.css
+    include-before-body: header.html
+    include-after-body: footer.html
+    toc: false
+    page-layout: full
+    metadata:
+      keywords: "Tomas Diviak, sna, sociology, researcher, criminology"
+      description: "Personal webpage of Tomas Diviak"

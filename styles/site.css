@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap");
+
+html,
+body {
+  font-family: Garamond, Georgia, serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  color: #111;
+  background: #fff;
+}
+
+.holder {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: flex-end;
+  background-image: url("../img/banner2.svg");
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.name {
+  position: absolute;
+  text-align: center;
+  top: 22%;
+  left: 15%;
+}
+
+.name h1,
+.name h2,
+.content h2 {
+  background-color: white;
+}
+
+.name h1 {
+  margin: 0.67em 0;
+  font-weight: 600;
+  font-family: Codystar, Garamond, Georgia, serif;
+}
+
+.name a,
+.name a:active,
+.name a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.name h2 {
+  margin: 0.83em 0;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  font-family: Garamond, Georgia, serif;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-bottom: rgb(197, 203, 209) 1px solid;
+  justify-content: space-around;
+}
+
+.navlinks {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  padding-left: 40px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgb(0, 132, 255);
+}
+
+.burger {
+  display: none;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0.5rem 1rem;
+}
+
+.burger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 7px;
+}
+
+#quarto-content {
+  display: block;
+}
+
+.quarto-title-block {
+  display: none;
+}
+
+main.content {
+  position: relative;
+  padding-top: 300px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.856);
+  line-height: 1.5em;
+  max-width: none;
+}
+
+.content-flex {
+  display: flex;
+  gap: 5%;
+}
+
+#photo {
+  flex: 0 0 32%;
+}
+
+#photo img {
+  width: 110%;
+  height: auto;
+  padding-top: 15%;
+}
+
+#about {
+  padding-top: 2%;
+}
+
+.specialty,
+.references,
+.course,
+.contact {
+  margin: 5% 0;
+}
+
+.contact {
+  text-align: center;
+  min-height: 40%;
+}
+
+.contact p {
+  padding: 2% 0;
+  font-size: 22px;
+}
+
+.links a,
+.links a:visited {
+  color: rgb(0, 132, 255);
+}
+
+.links a:hover,
+.links a:focus {
+  color: rgb(92, 176, 255);
+}
+
+.references p {
+  padding: 1% 0;
+}
+
+.publ-link {
+  border-radius: 5px;
+  border-style: dotted;
+  border-width: 1px;
+  margin-right: 5px;
+  padding: 1.5px 3px;
+  font-size: 13px;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.publ-where {
+  font-style: italic;
+}
+
+.social-icon {
+  width: 50px;
+  height: auto;
+  margin: 0 0.35rem;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+  text-align: end;
+  padding-right: 1%;
+}
+
+@media only screen and (max-width: 768px), (max-height: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .holder {
+    height: 100px;
+  }
+
+  main.content {
+    padding-top: 100px;
+  }
+
+  .name h2 {
+    display: none;
+  }
+
+  .name {
+    top: 15%;
+    left: 7.5%;
+  }
+
+  .navlinks {
+    position: absolute;
+    right: 0;
+    height: 84vh;
+    top: 85px;
+    background-image: url("../img/menu.svg");
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-left: 0;
+  }
+
+  .navlinks li {
+    opacity: 1;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    justify-content: flex-end;
+  }
+
+  .content-flex {
+    display: block;
+  }
+
+  #photo {
+    max-width: 280px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}

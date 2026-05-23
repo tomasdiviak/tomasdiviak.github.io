@@ -4,8 +4,6 @@ title-block-banner: false
 ---
 
 ::: {.contact}
-## Contact me
-
 Email: tomas.diviak\[at\]manchester.ac.uk
 
 [![](img/RG_icon.svg){.social-icon alt="ResearchGate"}](https://www.researchgate.net/profile/Tomas_Diviak){target="_blank"}

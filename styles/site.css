@@ -1,208 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap");
 
-html,
-body {
-  font-family: Garamond, Georgia, serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+:root {
+  --td-blue: rgb(0, 132, 255);
+  --td-muted: #6f7680;
+  --td-border: #d8dde3;
+  --bs-body-font-family: Garamond, Georgia, "Times New Roman", serif;
+  --bs-font-sans-serif: Garamond, Georgia, "Times New Roman", serif;
 }
 
 body {
-  min-height: 100vh;
-  color: #111;
-  background: #fff;
+  font-family: Garamond, Georgia, "Times New Roman", serif;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.98)),
+    url("../img/banner2.svg") right top / min(760px, 90vw) auto no-repeat fixed;
 }
 
-.holder {
-  display: flex;
-  height: 300px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  align-items: flex-end;
-  background-image: url("../img/banner2.svg");
-  background-position: right top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 10;
+.navbar {
+  min-height: 58px;
+  border-bottom: 1px solid var(--td-border);
+  box-shadow: 0 2px 12px rgba(18, 28, 45, 0.04);
+  --bs-navbar-color: rgba(0, 0, 0, 0.68);
+  --bs-navbar-hover-color: var(--td-blue);
+  --bs-navbar-active-color: var(--td-blue);
+  --bs-navbar-brand-color: #111;
+  --bs-navbar-brand-hover-color: #111;
+  --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.18);
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.68%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.name {
-  position: absolute;
-  text-align: center;
-  top: 22%;
-  left: 15%;
-}
-
-.name h1,
-.name h2,
-.content h2 {
-  background-color: white;
-}
-
-.name h1 {
-  margin: 0.67em 0;
+.navbar-brand {
+  font-family: Codystar, Georgia, serif;
+  font-size: 1.35rem;
   font-weight: 600;
-  font-family: Codystar, Garamond, Georgia, serif;
+  letter-spacing: 0;
 }
 
-.name a,
-.name a:active,
-.name a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.name h2 {
-  margin: 0.83em 0;
-  font-size: 1.2em;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  font-family: Garamond, Georgia, serif;
-}
-
-nav {
-  display: flex;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding-bottom: 1px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-bottom: rgb(197, 203, 209) 1px solid;
-  justify-content: space-around;
-}
-
-.navlinks {
-  display: flex;
+.navbar-nav .nav-link {
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  width: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 1em 0;
-  padding-left: 40px;
+  letter-spacing: 0.08rem;
+  font-size: 0.82rem;
 }
 
-.navlinks a {
-  text-decoration: none;
-  color: black;
-}
-
-.navlinks li {
-  list-style: none;
-}
-
-nav a:visited {
-  color: black;
-}
-
-nav a:hover,
-nav a:focus {
-  color: rgb(0, 132, 255);
-}
-
-.burger {
-  display: none;
-  appearance: none;
-  border: 0;
-  background: transparent;
-  padding: 0;
-  margin: 0.5rem 1rem;
-}
-
-.burger span {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: black;
-  margin: 7px;
-}
-
-#quarto-content {
-  display: block;
-}
-
-.quarto-title-block {
-  display: none;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: var(--td-blue);
 }
 
 main.content {
-  position: relative;
-  padding-top: 300px;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
-  font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.856);
-  line-height: 1.5em;
-  max-width: none;
+  font-size: 1.06rem;
+  line-height: 1.65;
+  padding-top: 2.4rem;
+  padding-bottom: 3rem;
 }
 
-.content-flex {
-  display: flex;
-  gap: 5%;
+.quarto-title h1.title {
+  font-family: Garamond, Georgia, "Times New Roman", serif;
+  font-weight: 600;
 }
 
-#photo {
-  flex: 0 0 32%;
+.quarto-about-trestles .quarto-title h1.title {
+  font-family: Codystar, Garamond, Georgia, serif;
+  font-weight: 600;
 }
 
-#photo img {
-  width: 110%;
-  height: auto;
-  padding-top: 15%;
+.subtitle {
+  color: var(--td-muted);
 }
 
-#about {
-  padding-top: 2%;
+.about-entity .about-link {
+  border-radius: 4px;
+}
+
+.about-contents {
+  max-width: 760px;
 }
 
 .specialty,
 .references,
 .course,
 .contact {
-  margin: 5% 0;
+  margin: 2.5rem 0;
 }
 
-.contact {
-  text-align: center;
-  min-height: 40%;
-}
-
-.contact p {
-  padding: 2% 0;
-  font-size: 22px;
+.content h2,
+.content h3 {
+  font-family: Garamond, Georgia, "Times New Roman", serif;
+  font-weight: 600;
 }
 
 .links a,
 .links a:visited {
-  color: rgb(0, 132, 255);
+  color: var(--td-blue);
 }
 
 .links a:hover,
 .links a:focus {
-  color: rgb(92, 176, 255);
+  color: rgb(64, 160, 250);
 }
 
 .references p {
-  padding: 1% 0;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(216, 221, 227, 0.65);
 }
 
 .publ-link {
-  border-radius: 5px;
-  border-style: dotted;
-  border-width: 1px;
+  border-radius: 4px;
+  border: 1px dotted currentColor;
   margin-right: 5px;
-  padding: 1.5px 3px;
-  font-size: 13px;
+  padding: 1px 4px;
+  font-size: 0.78rem;
   text-decoration: none;
   word-break: break-word;
 }
@@ -211,84 +118,40 @@ main.content {
   font-style: italic;
 }
 
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
 .social-icon {
-  width: 50px;
+  width: 44px;
   height: auto;
   margin: 0 0.35rem;
 }
 
-footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
+.nav-footer {
+  border-top: 1px solid var(--td-border);
 }
 
-footer p {
-  font-size: 0.9rem;
-  text-align: end;
-  padding-right: 1%;
-}
-
-@media only screen and (max-width: 768px), (max-height: 600px) {
+@media (max-width: 768px) {
   body {
-    overflow-x: hidden;
-  }
-
-  .holder {
-    height: 100px;
+    background-size: 680px auto;
+    background-attachment: scroll;
   }
 
   main.content {
-    padding-top: 100px;
+    padding-top: 1.5rem;
   }
 
-  .name h2 {
-    display: none;
+  .navbar-brand {
+    font-size: 1.15rem;
   }
 
-  .name {
-    top: 15%;
-    left: 7.5%;
+  .navbar-nav .nav-link {
+    letter-spacing: 0.04rem;
   }
-
-  .navlinks {
-    position: absolute;
-    right: 0;
-    height: 84vh;
-    top: 85px;
-    background-image: url("../img/menu.svg");
-    opacity: 0.95;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    padding-left: 0;
-  }
-
-  .navlinks li {
-    opacity: 1;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-
-  nav {
-    justify-content: flex-end;
-  }
-
-  .content-flex {
-    display: block;
-  }
-
-  #photo {
-    max-width: 280px;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
 }

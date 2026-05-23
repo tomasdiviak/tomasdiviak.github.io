@@ -6,17 +6,24 @@ website:
   title: "Tomas Diviak"
   favicon: TDfavicon.ico
   search: false
-  page-footer: ""
-  navbar: false
+  navbar:
+    background: light
+    foreground: dark
+    title: "Tomas Diviak"
+    left:
+      - text: "About me"
+        href: index.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Contact me"
+        href: contact.qmd
 
 format:
   html:
-    theme: none
+    theme: litera
     css: styles/site.css
-    include-before-body: header.html
-    include-after-body: footer.html
     toc: false
-    page-layout: full
-    metadata:
-      keywords: "Tomas Diviak, sna, sociology, researcher, criminology"
-      description: "Personal webpage of Tomas Diviak"

@@ -8,7 +8,7 @@ title-block-banner: false
 
 Crime and Networks
 
-Intruduction to Social Network Analysis
+Introduction to Social Network Analysis
 
 Data Analysis in R & RStudio (department of Criminology, University of Manchester)
 

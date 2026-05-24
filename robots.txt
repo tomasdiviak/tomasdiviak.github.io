@@ -1,1 +1,1 @@
-Sitemap: https://tomasdiviak.github.io/tomasdiviak/sitemap.xml
+Sitemap: https://tomasdiviak.com/sitemap.xml
